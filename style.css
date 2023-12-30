@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Kalnia:wght@300&family=Merienda:wght@300&family=Nunito:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 90%;
+}
+
+/* for all Headings */
+.Major-heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+}
+
+.Major-heading::before {
+    content: '';
+    position: absolute;
+    background-color: lightgray;
+    height: 1px;
+    width: 2rem;
+    bottom: 4rem;
+}
+
+/* major button */
+
+.major-button {
+    background-color: blueviolet;
+    padding: .88rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all .4s linear;
+
+    &:hover {
+        box-shadow: rgba(143, 8, 221, 0.35) 0px 5px 15px;
+    }
+}
+
+
+/* <!-- navigation menu --> */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    padding: 3rem 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: 'Kalnia', serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.nav-links li {
+    list-style: none;
+    justify-content: space-around;
+    font-size: .99rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: all .2s linear;
+    font-size: 1.1rem;
+
+    &:hover {
+        color: rgb(167, 103, 226);
+    }
+}
+
+.burger {
+    cursor: pointer;
+    border: 1px solid black;
+    display: none;
+}
+
+.burger div {
+    background-color: black;
+    height: 2px;
+    width: 1.5rem;
+    margin: 6px;
+    transition: all .3s ease-in-out;
+
+}
+
+/* <!-- first section --> */
+
+.project-middle .paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 7rem 0;
+}
+
+.paragraphs h1 {
+    font-size: 3.2rem;
+    width: 43%;
+    text-align: center;
+}
+
+.paragraphs p {
+    color: gray;
+    width: 55%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.project-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.project-left {
+    padding-left: 10%;
+}
+
+.project-left .info {
+    width: 40rem;
+}
+
+.info h2 {
+    font-family: 'Merienda', cursive;
+    font-size: 3rem;
+}
+
+.info .grid-columns-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 4rem;
+    margin: 3rem 0;
+}
+
+.info p {
+    position: relative;
+    padding-left: 2.3rem;
+    font-weight: 600;
+    color: rgb(100, 98, 98);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.info .grid-columns-info p::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    bottom: 12rem;
+    border-radius: 10px;
+    background-color: blueviolet;
+    width: 0.36rem;
+    height: 3.2rem;
+}
+
+.info a:active {
+    scale: 4;
+}
+
+.project-right {
+    padding-right: 10%;
+}
+
+.project-right img {
+    width: 40rem;
+}
+
+/* <!-- About Section --> */
+
+.About {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 77%;
+    margin: auto;
+    /* width: 70%; */
+}
+
+.About .right-details {
+    padding-left: 5rem;
+}
+
+.About .right-details h2 {
+    font-size: 2.3rem;
+    padding-bottom: 2.3rem;
+    font-family: 'Merienda', cursive;
+}
+
+.About .right-details p {
+    font-size: 1.4rem;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.About .right-details a {
+    background-color: blueviolet;
+    padding: .88rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 1px;
+    transition: all .4s linear;
+
+    &:hover {
+        box-shadow: rgba(143, 8, 221, 0.35) 0px 5px 15px;
+    }
+}
+
+/* .About .right-details a:active{
+    scale: ;
+} */
+
+.About .left-img img {
+    width: 22rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+/* <!-- Client Section --> */
+
+.clients-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 6rem;
+}
+
+/* <!-- Service Section --> */
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+.services-list .box {
+    justify-content: center;
+    width: 25%;
+    margin: 1.5rem;
+    position: relative;
+}
+
+.services-list .box h1 {
+    position: absolute;
+    top: -6rem;
+    left: -3.5rem;
+    font-size: 10rem;
+    color: whitesmoke;
+    z-index: -1;
+    font-weight: bold;
+    font-family: 'Merienda', cursive;
+}
+
+.services-list .box img {
+    margin-bottom: 3rem;
+    margin-left: .77rem;
+}
+
+.services-list .box h2 {
+    font-family: 'Merienda', cursive;
+    font-size: 1.7rem;
+
+}
+
+.services-list .box p {
+    font-family: 'Nunito', sans-serif;
+    width: 108%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+@media screen and (max-width:1280px) {
+
+    html {
+        font-size: 85%;
+    }
+
+    /* first section */
+
+    .paragraphs h1 {
+        width: 68%;
+    }
+
+    .paragraphs p {
+        width: 58%;
+    }
+
+    .project-top {
+        width: 90%;
+        padding: 0 5rem;
+        margin: auto;
+    }
+
+    .project-left {
+        padding-left: 10rem;
+    }
+
+    .project-left .info {
+        width: 37rem;
+    }
+
+    .info p {
+        white-space: nowrap;
+    }
+
+    .project-right {
+        margin-top: 3rem;
+    }
+
+    .project-right img {
+        width: 34rem;
+        margin-top: 2rem;
+    }
+
+    /* About section */
+
+    .About {
+        width: none;
+    }
+
+    .About .left-img img {
+        width: 100%;
+    }
+
+    /* Services section */
+
+    .services-list {
+        width: 106%;
+    }
+
+    .services-list .box p {
+        width: 112%;
+    }
+
+    /* Clients group */
+
+    .clients-group {
+        padding: 0 7%;
+
+    }
+}
+
+/* end */
+
+
+@media screen and (max-width:992px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    html {
+        font-size: 80%;
+    }
+
+    /* <!-- navigation menu --> */
+
+    .nav-links {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 3rem;
+        align-items: center;
+        height: 56%;
+        width: 19rem;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-links a {
+        color: black;
+        font-size: 1.2rem;
+        line-height: 4rem;
+
+        &:hover {
+            color: rgb(167, 103, 226);
+        }
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* <!-- first section --> */
+
+
+    .project-middle .paragraphs {
+        padding: 11rem 0;
+    }
+
+    .project-top {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        width: 43%;
+        margin: auto;
+    }
+
+    .project-left {
+        padding-left: 0rem;
+    }
+
+    .project-left .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info .grid-columns-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        padding-left: 5rem;
+    }
+
+    .info p {
+        padding-left: 2.3rem;
+        padding-right: 4rem;
+    }
+
+    .info h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-right {
+        margin-bottom: 5rem;
+    }
+
+
+    /* About section */
+
+    .About {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 5%;
+        max-width: none;
+    }
+
+    /* Clients section */
+
+    .clients-group {
+        gap: 7rem;
+    }
+
+    /* Services section */
+
+    .services-list .box {
+        width: 33%;
+        margin: 3.5rem;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    html {
+        font-size: 70%;
+    }
+
+
+    /* <!-- first section --> */
+
+    .project-top {
+        display: flex;
+        flex-direction: column;
+        width: 43%;
+        margin: auto;
+    }
+
+    .project-left .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info h2 {
+        white-space: nowrap;
+    }
+
+    .info .grid-columns-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding-left: 5rem;
+    }
+
+    .info p {
+        padding-right: 0rem;
+    }
+
+    
+
+    /* About section */
+
+    .About {
+        max-width: none;
+        display: flex;
+        padding: 0 12%;
+        flex-direction: column;
+    }
+
+    .About .left-img img {
+        box-shadow: rgba(0, 0, 0, 0.26) 0px 22px 70px 4px;
+    }
+
+    .About .right-details {
+        margin-top: 2rem;
+        padding-left: 0rem;
+    }
+
+    .About .right-details p {
+        width: 100%;
+    }
+
+    /* Clint section */
+
+    .clients-group {
+        padding: 0 10%;
+    }
+
+}
+
+@media screen and (max-width:640px){
+
+    /* <!-- first section --> */
+
+    .paragraphs h1 {
+        width: 73%;
+    }
+
+    .paragraphs p {
+        width: 73%;
+    }
+
+    /* Services section */
+
+    .services-list .box {
+        width: 73%;
+        margin: 3.5rem;
+    }
+
+    .services-list .box h1 {
+        position: absolute;
+        left: -3rem;
+    }
+}
+
+@media screen and (max-width:475px){
+
+    /* <!-- first section --> */
+
+    .project-right img {
+        width: 30rem;
+    }
+}
